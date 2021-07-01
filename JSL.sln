@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31410.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JSL", "JSL\JSL.csproj", "{D6B824CA-D967-4190-A4FE-32D2D53B16EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JSL_API", "JSL_API\JSL_API.csproj", "{CE727B9A-F935-466B-9247-9317F9F8E382}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D6B824CA-D967-4190-A4FE-32D2D53B16EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6B824CA-D967-4190-A4FE-32D2D53B16EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6B824CA-D967-4190-A4FE-32D2D53B16EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6B824CA-D967-4190-A4FE-32D2D53B16EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE727B9A-F935-466B-9247-9317F9F8E382}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE727B9A-F935-466B-9247-9317F9F8E382}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE727B9A-F935-466B-9247-9317F9F8E382}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE727B9A-F935-466B-9247-9317F9F8E382}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0EA8E1B4-83E2-4228-9D56-D4BDA8760CA4}
+	EndGlobalSection
+EndGlobal

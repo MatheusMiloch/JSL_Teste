@@ -1,0 +1,66 @@
+﻿@model JSL.Models.Motorista
+
+@{
+    ViewData["Title"] = "Detalhes";
+}
+
+<h1>Detalhes</h1>
+
+<div>
+    <h4>Motorista</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.nomeMotorista)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.nomeMotorista)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.enderecoMotorista)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.enderecoMotorista)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.cidadeMotorista)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.cidadeMotorista)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.estadoMotorista)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.estadoMotorista)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.marcaCaminhao)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.marcaCaminhao)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.modeloCaminhao)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.modeloCaminhao)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.placaCaminhao)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.placaCaminhao)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.qntEixos)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.qntEixos)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Editar</a> |
+    <a asp-action="Index">Voltar para lista</a>
+</div>

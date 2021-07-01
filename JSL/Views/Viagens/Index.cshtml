@@ -1,0 +1,59 @@
+﻿@model IEnumerable<JSL.Models.Viagem>
+
+@{
+    ViewData["Title"] = "Lista";
+}
+
+<h1>Lista de viagens</h1>
+
+<p>
+    <a asp-action="Create">Nova viagem</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.date)
+            </th>   
+            <th>
+                @Html.DisplayNameFor(model => model.LocalEntrega)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LocalSaida)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.KmTotal)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Motorista)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.date)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LocalEntrega)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LocalSaida)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.KmTotal)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Motorista.nomeMotorista)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Editar</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Detalhes</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Excluir</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
